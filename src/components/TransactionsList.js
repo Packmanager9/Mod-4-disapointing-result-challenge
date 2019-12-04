@@ -1,38 +1,46 @@
 import React from 'react'
 
-const TransactionsList = () => {
+class TransactionsList extends React.Component {
 
-  return (
-    <table className="ui celled striped padded table">
+  render(){
+
+    return (
+      <div key={Math.random()}>
+      {this.props.data.map((transaction) => {
+                            return(
+                                
+      <table className="ui celled striped padded table">
       <tbody>
         <tr>
           <th>
             <h3 className="ui center aligned header">
-              Posted At
+              {transaction.posted_at}
             </h3>
           </th>
           <th>
             <h3 className="ui center aligned header">
-              Description
+              {transaction.description}
             </h3>
           </th>
           <th>
             <h3 className="ui center aligned header">
-              Category
+              {transaction.category}
             </h3>
           </th>
           <th>
             <h3 className="ui center aligned header">
-              Amount
+              {transaction.amount}
             </h3>
           </th>
         </tr>
-
-        {"... your code here..."}
-
       </tbody>
     </table>
-  )
+                            )
+                        })}
+    </div>
+    )
+
+  }
 }
 
 export default TransactionsList

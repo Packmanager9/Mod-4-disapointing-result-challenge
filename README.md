@@ -43,11 +43,11 @@ If you are unfamiliar with HTML tables, take a look at the [docs with an example
 ## Criteria
 
 We’ll be evaluating your code based on the following criteria:
-- **React Components:** Does the app reasonably separate responsibilities into components and a have a component hierarchy?
-- **Props:** Does the app have at least one presentational component that receives props? Does the app pass props down from a higher-level component to a lower one? Does the app make use of passing a functional prop?
-- **State:** Does the app have a search input that responds to changes and calls this.setState?
-- **Lifecycle Methods & API:** Does the app make an AJAX request to the API and return data? Does it set the state of the component within the app with that data within a lifecycle method?
-- **Feature:** Does the app filter the list of transactions?
+- **React Components:** Does the app reasonably separate responsibilities into components and a have a component hierarchy? // yes
+- **Props:** Does the app have at least one presentational component that receives props? Does the app pass props down from a higher-level component to a lower one? Does the app make use of passing a functional prop? // yes
+- **State:** Does the app have a search input that responds to changes and calls this.setState? // technically it responds, but its broken
+- **Lifecycle Methods & API:** Does the app make an AJAX request to the API and return data? Does it set the state of the component within the app with that data within a lifecycle method?  // yes
+- **Feature:** Does the app filter the list of transactions? // no
 - Does the app follow best practices regarding state and component composition?
 
 
